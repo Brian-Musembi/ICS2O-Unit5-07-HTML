@@ -1,0 +1,63 @@
+body {
+  background-color: #acadd2;
+}
+
+.button {
+  background-color: #3e4074;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button2 {border-radius: 5px;}
+.button2 {
+  background-color: #3e4074;
+  color: white;
+  border: 4px solid #3e4074;
+
+}
+
+.button2:hover {
+  background-color: white;
+  color: black;
+}
+
+h1 {
+    font-size:40px;
+    text-align: center
+}
+
+p {
+    font-size:20px;
+}
+
+h3 {
+    font-size:30px;
+    text-align: center
+}
+
+input[type=text], select {
+  width: 15%;
+  padding: 20px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 2px solid #5B5EA6;
+  border-radius: 4px;
+  background-color: #7a7cb8;
+  color: white;
+}
+
+::placeholder {
+  color: #dedeed;
+  opacity: 1;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="My Webpage">
+    <meta name="keywordss" content="Hello, World! website">
+    <meta name="author" content="Brian Musembi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>My Webpage</title>
+  </head>
+  <body>
+    <h1 align="center"><u>Brian's Multiplier Website</u></h1>
+    <div class="form">
+    <p><label for="answer">Enter Your Numbers Here:</label></p>
+    <input type="text" id="x" class="answer" placeholder="Input Number Here"> X <input type="text" id="y" class="answer" placeholder="Input Number Here">
+    <button class="button button2" id="btncalc" onclick="myFunction()">Calculate</button>
+    <h3> The Answer Is: </h3>
+    <h3 id="output"><b></b></h3>
+    </div>
+    <script>
+   (function() {
+    var x = document.getElementById("x");
+    var y = document.getElementById("y");
+    var z = document.getElementById("output");
+    document.getElementById("btncalc").addEventListener("click", function() {
+    z.innerHTML = multiply(+x.value, +y.value);});
+
+    function multiply(a, b) {
+    if (a < 0) {
+    return 0-(multiply(0-a, b))}
+    else if (b < 0) {
+    return 0-(multiply(a, 0-b))}
+    else {
+    var smallerNumber;
+    var biggerNumber;
+    if (a <= b) {
+      smallerNumber = a;
+      biggerNumber = b;}
+    else {
+      smallerNumber = b;
+      biggerNumber = a;}
+    var total = 0;
+    for (var i = 0; i < smallerNumber; i++) {
+      total += biggerNumber;}
+      return total;}}})();
+    </script>
+    </body>
+</html>
